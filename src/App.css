@@ -229,3 +229,101 @@ a {
   background-color: #0f172a;
   margin-top: 2rem;
 }
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ----------------- RESPONSIVE STYLES ----------------- */
+@media (max-width: 1024px) {
+  .navbar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 1rem 0 0;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .skills-icons span {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  .project-name {
+    font-size: 1.1rem;
+  }
+
+  .contact-details p {
+    font-size: 0.95rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-inner {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .skills-icons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .skills-icons span {
+    width: 100%;
+    text-align: center;
+  }
+}
